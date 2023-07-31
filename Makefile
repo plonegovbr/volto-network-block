@@ -27,7 +27,7 @@ VOLTO_VERSION=`python ${CURRENT_DIR}/.github/helper.py volto_version`
 ADDON_NAME='@plonegovbr/volto-network-block'
 ADDON_PATH='volto-network-block'
 DEV_COMPOSE=dockerfiles/docker-compose.yml
-ACCEPTANCE_COMPOSE=dockerfiles/docker-compose.yml
+ACCEPTANCE_COMPOSE=acceptance/docker-compose.yml
 CMD=CURRENT_DIR=${CURRENT_DIR} ADDON_NAME=${ADDON_NAME} ADDON_PATH=${ADDON_PATH} VOLTO_VERSION=${VOLTO_VERSION} PLONE_VERSION=${PLONE_VERSION} docker compose
 DOCKER_COMPOSE=${CMD} -p ${ADDON_PATH} -f ${DEV_COMPOSE}
 ACCEPTANCE=${CMD} -p ${ADDON_PATH}-acceptance -f ${ACCEPTANCE_COMPOSE}
