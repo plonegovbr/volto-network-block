@@ -3,7 +3,10 @@ import config from '@plone/volto/registry';
 export const getNetworks = (backendNetworks, allowedNetworks = []) => {
   const { settings } = config;
   const configNetworks = settings.socialNetworks || [];
-  const networks = backendNetworks ? backendNetworks : configNetworks;
+  const networks =
+    backendNetworks && backendNetworks.length > 0
+      ? backendNetworks
+      : configNetworks;
   if (allowedNetworks.length > 0) {
     const rawNetworks = {};
     for (const item of networks) {

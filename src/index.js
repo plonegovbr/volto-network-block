@@ -5,6 +5,23 @@ import shareSVG from '@plone/volto/icons/share.svg';
 import './theme/main.scss';
 
 const applyConfig = (config) => {
+  config.settings = {
+    ...config.settings,
+    socialNetworks: [
+      {
+        id: 'twitter',
+        title: 'Twitter',
+        icon: 'twitter',
+        url: 'https://twitter.com/ploneorgbr/',
+      },
+      {
+        id: 'instagram',
+        title: 'Instagram',
+        icon: 'instagram',
+        url: 'https://www.instagram.com/plonebr/',
+      },
+    ],
+  };
   const localBlocks = {
     follow_us: {
       id: 'follow_us',

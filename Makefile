@@ -140,7 +140,6 @@ start-test-acceptance-server: ## Start acceptance server
 .PHONY: start-test-acceptance-server-prod
 start-test-acceptance-server-prod: ## Start acceptance server
 	${ACCEPTANCE} --profile prod up -d
-
 .PHONY: test-acceptance
 test-acceptance: ## Start Cypress
 	(cd acceptance && ./node_modules/.bin/cypress open)
@@ -151,7 +150,7 @@ test-acceptance-headless: ## Run cypress tests in CI
 
 .PHONY: stop-test-acceptance-server
 stop-test-acceptance-server: ## Stop acceptance server
-	${ACCEPTANCE} down
+	${ACCEPTANCE} --profile prod --profile dev down
 
 .PHONY: status-test-acceptance-server
 status-test-acceptance-server: ## Status of Acceptance Server
