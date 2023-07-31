@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       VOLTO_VERSION: ${{ steps.vars.outputs.VOLTO_VERSION }}
+      CURRENT_DIR: ${{ steps.vars.outputs.CURRENT_DIR }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -20,12 +21,14 @@ jobs:
         id: vars
         run: |
           echo "VOLTO_VERSION=`python .github/helper.py volto_version`" >> $GITHUB_OUTPUT
+          echo "CURRENT_DIR=`pwd`" >> $GITHUB_OUTPUT
 
   acceptance:
     runs-on: ubuntu-latest
     needs:
       - meta
     env:
+      CURRENT_DIR: ${{ needs.meta.outputs.CURRENT_DIR }}
       VOLTO_VERSION: ${{ needs.meta.outputs.VOLTO_VERSION }}
     steps:
       - name: Checkout
