@@ -1,0 +1,23 @@
+.footer_links {
+  &.full,
+  &.center {
+    text-align: center;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  .footer_links.title {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  .social-networks {
+    padding-top: 0.5rem;
+  }
+}

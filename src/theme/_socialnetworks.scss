@@ -1,0 +1,18 @@
+.ui.container.social-networks {
+  &.full,
+  &.center {
+    text-align: center;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  .item {
+    padding: 0.1rem;
+  }
+}

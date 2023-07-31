@@ -1,0 +1,7 @@
+.social-network.icon {
+  color: var(--social-network-icon-color-main);
+
+  &:hover {
+    color: var(--social-network-icon-color-hover);
+  }
+}

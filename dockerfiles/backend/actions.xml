@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Plone Actions Tool"
+        name="portal_actions"
+>
+  <object meta_type="CMF Action Category"
+          name="social_actions"
+  >
+    <property name="title">Social actions</property>
+    <object meta_type="CMF Action"
+            name="facebook"
+    >
+      <property name="title"
+      >Facebook</property>
+      <property name="description"
+      />
+      <property name="url_expr">string:https://www.facebook.com/Plone-Brasil-101606785972720</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:facebook</property>
+      <property name="available_expr" />
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="github"
+    >
+      <property name="title"
+      >GitHub</property>
+      <property name="description"
+      />
+      <property name="url_expr">string:https://github.com/plonegovbr</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:github</property>
+      <property name="available_expr" />
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="instagram"
+    >
+      <property name="title"
+      >Instagram</property>
+      <property name="description"
+      />
+      <property name="url_expr">string:https://www.instagram.com/plonebr/</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:instagram</property>
+      <property name="available_expr" />
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="twitter"
+    >
+      <property name="title"
+      >Twitter</property>
+      <property name="description"
+      />
+      <property name="url_expr">string:https://twitter.com/ploneorgbr/</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:twitter</property>
+      <property name="available_expr" />
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object meta_type="CMF Action"
+            name="youtube"
+    >
+      <property name="title"
+      >Youtube</property>
+      <property name="description"
+      />
+      <property name="url_expr">string:https://www.youtube.com/playlist?list=PLGN9BI-OAQkTbVIJRPYpAs1K4hBdkLl10</property>
+      <property name="link_target" />
+      <property name="icon_expr">string:youtube</property>
+      <property name="available_expr" />
+      <property name="permissions">
+        <element value="View" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+
+  </object>
+
+</object>

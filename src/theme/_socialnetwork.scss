@@ -1,0 +1,13 @@
+.social-network.item {
+  background-color: var(--social-network-background-color-main);
+
+  &:hover {
+    background-color: var(--social-network-background-hover);
+  }
+
+  &.animate {
+    &:hover {
+      @include animate-network-hover();
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# syntax=docker/dockerfile:1
+ARG PLONE_VERSION=6
+FROM plone/server-builder:${PLONE_VERSION} as builder
+
+ENV _PIP_USE_IMPORTLIB_METADATA=0
+
+WORKDIR /app
+
+# Add local code
+COPY create_site.py scripts/create_site.py
+COPY actions.xml actions.xml
+
+FROM plone/server-prod-config:${PLONE_VERSION}
+
+# Disable MO Compilation
+ENV zope_i18n_compile_mo_files=
+
+COPY --from=builder /app /app
+
+RUN <<EOT
+    set -e
+    ln -s /data /app/var
+    chown -R 500:500 /app/etc/
+    SEED=`date '+%Y%m%d-%H%M%S'` DELETE_EXISTING=1 ./docker-entrypoint.sh create-site
+EOT

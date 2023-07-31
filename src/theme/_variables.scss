@@ -1,0 +1,26 @@
+// Sass Variables
+/// Icon
+$social-network-icon-color-main: #023d6b !default;
+$social-network-icon-background-main: transparent !default;
+$social-network-icon-color-hover: #023d6b !default;
+$social-network-icon-background-hover: transparent !default;
+
+/// Animation
+$social-network-animation-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1) !default;
+$social-network-animation-transform: translateY(-2px) !default;
+$social-network-animation-transition: all 0.4s
+  cubic-bezier(0.645, 0.045, 0.355, 1) !default;
+
+@mixin animate-network-hover() {
+  box-shadow: $social-network-animation-box-shadow;
+  transform: $social-network-animation-transform;
+  -webkit-transition: $social-network-animation-transition;
+  transition: $social-network-animation-transition;
+}
+
+:root {
+  --social-network-icon-color-main: #{$social-network-icon-color-main};
+  --social-network-icon-color-hover: #{$social-network-icon-color-hover};
+  --social-network-background-main: #{$social-network-icon-background-main};
+  --social-network-background-hover: #{$social-network-icon-background-hover};
+}
