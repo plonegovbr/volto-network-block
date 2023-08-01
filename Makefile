@@ -140,6 +140,7 @@ start-test-acceptance-server: ## Start acceptance server
 .PHONY: start-test-acceptance-server-prod
 start-test-acceptance-server-prod: ## Start acceptance server
 	${ACCEPTANCE} --profile prod up -d
+
 .PHONY: test-acceptance
 test-acceptance: ## Start Cypress
 	(cd acceptance && ./node_modules/.bin/cypress open)
