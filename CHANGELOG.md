@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 0.1.1 (2023-08-01)
+
+### Bugfix
+
+- Fix linting errors [@ericof] [#3](https://github.com/plonegovbr/volto-network-block/issues/3)
+
+
 ## 0.1.0 (2023-08-01)
 
 ### Feature
