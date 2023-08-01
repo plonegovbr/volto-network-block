@@ -21,3 +21,14 @@
     padding-top: 0.5rem;
   }
 }
+
+// Block inside a grid
+.block.gridBlock {
+  .block.follow_us.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+  }
+}

@@ -41,7 +41,7 @@ volto-version: ## Print Volto Version
 build-backend: ## Build
 	@echo "$(GREEN)==> Build Backend Container $(RESET)"
 	${DOCKER_COMPOSE} stop backend
-	${DOCKER_COMPOSE} rm backend
+	${DOCKER_COMPOSE} rm -f backend
 	${DOCKER_COMPOSE} build backend
 
 .PHONY: start-backend

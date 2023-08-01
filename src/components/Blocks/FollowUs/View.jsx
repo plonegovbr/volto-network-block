@@ -17,8 +17,10 @@ const View = ({ data, isEditMode, className }) => {
   const networks = getNetworks(backendNetworks, allowedNetworks);
   return (
     <div className={cx('block follow_us', className, align)}>
-      {title && <div className="follow_us title">{title}</div>}
-      <SocialNetworks networks={networks} animate={animate} align={align} />
+      <div className={'container'}>
+        {title && <div className="follow_us title">{title}</div>}
+        <SocialNetworks networks={networks} animate={animate} align={align} />
+      </div>
     </div>
   );
 };
