@@ -5,6 +5,7 @@ import cx from 'classnames';
 import discordIcon from '../../icons/discord.svg';
 import dockerIcon from '../../icons/docker.svg';
 import facebookIcon from '../../icons/facebook.svg';
+import flickrIcon from '../../icons/flickr.svg';
 import githubIcon from '../../icons/github.svg';
 import gitlabIcon from '../../icons/gitlab.svg';
 import instagramIcon from '../../icons/instagram.svg';
@@ -12,6 +13,7 @@ import linkedinIcon from '../../icons/linkedin.svg';
 import mastodonIcon from '../../icons/mastodon.svg';
 import mediumIcon from '../../icons/medium.svg';
 import slackIcon from '../../icons/slack.svg';
+import soundcloudIcon from '../../icons/soundcloud.svg';
 import spotifyIcon from '../../icons/spotify.svg';
 import stackoverflowIcon from '../../icons/stack-overflow.svg';
 import telegramIcon from '../../icons/telegram.svg';
@@ -28,6 +30,7 @@ const ICONS = {
   discord: discordIcon,
   docker: dockerIcon,
   facebook: facebookIcon,
+  flickr: flickrIcon,
   github: githubIcon,
   gitlab: gitlabIcon,
   instagram: instagramIcon,
@@ -35,6 +38,7 @@ const ICONS = {
   mastodon: mastodonIcon,
   medium: mediumIcon,
   slack: slackIcon,
+  soundcloud: soundcloudIcon,
   spotify: spotifyIcon,
   stackoverflow: stackoverflowIcon,
   telegram: telegramIcon,
