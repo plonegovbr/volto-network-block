@@ -8,6 +8,14 @@
 
 <!-- towncrier release notes start -->
 
+## 0.2.0 (2023-08-04)
+
+### Feature
+
+- Add Flickr and Soundcloud icons [@ericof] [#4](https://github.com/plonegovbr/volto-network-block/issues/4)
+- Update pt_BR translation [@ericof] [#5](https://github.com/plonegovbr/volto-network-block/issues/5)
+
+
 ## 0.1.1 (2023-08-01)
 
 ### Bugfix
