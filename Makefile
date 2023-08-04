@@ -95,7 +95,7 @@ help:		## Show this help.
 # Dev Helpers
 .PHONY: i18n
 i18n: ## Sync i18n
-	${DOCKER_COMPOSE} run addon-no-backend i18n
+	${DOCKER_COMPOSE} run -e ADDON_PATH=$(ADDON_PATH) --entrypoint '/app/i18n.sh' addon-no-backend
 
 .PHONY: release
 release: ## Release package

@@ -1,13 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2023-08-04T18:02:39.658Z\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-29T12:34:47.097Z\n"
+"PO-Revision-Date: \n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"Language: \n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8\n"
@@ -16,30 +19,30 @@ msgstr ""
 #: components/Blocks/FollowUs/schema
 # defaultMessage: Align
 msgid "Align"
-msgstr ""
+msgstr "Alinhamento"
 
 #: components/Blocks/FollowUs/schema
 # defaultMessage: Animate Icon
 msgid "Animate Icon"
-msgstr ""
+msgstr "Animar o ícone"
 
 #: components/Blocks/FollowUs/Data
 #: components/Blocks/FollowUs/schema
 # defaultMessage: Follow Us
 msgid "Follow Us Block"
-msgstr ""
+msgstr "Bloco Siga-nos"
 
 #: components/Blocks/FollowUs/schema
 # defaultMessage: Headline
 msgid "Headline"
-msgstr ""
+msgstr "Chamada"
 
 #: components/Blocks/FollowUs/schema
 # defaultMessage: Network
 msgid "Network"
-msgstr ""
+msgstr "Rede"
 
 #: components/Blocks/FollowUs/schema
 # defaultMessage: Networks
 msgid "Networks"
-msgstr ""
+msgstr "Redes"
