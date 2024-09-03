@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from '@plone/volto/components';
 import cx from 'classnames';
+import blueskyIcon from '../../icons/bluesky.svg';
 import discordIcon from '../../icons/discord.svg';
 import dockerIcon from '../../icons/docker.svg';
 import facebookIcon from '../../icons/facebook.svg';
@@ -27,6 +28,7 @@ import youtubeIcon from '../../icons/youtube.svg';
 const defaultSize = '36px';
 
 const ICONS = {
+  bluesky: blueskyIcon,
   discord: discordIcon,
   docker: dockerIcon,
   facebook: facebookIcon,
