@@ -8,6 +8,14 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0 (2024-09-03)
+
+### Feature
+
+- Add Spanish translations @macagua [#8](https://github.com/plonegovbr/volto-network-block/issues/8)
+- Add BlueSky network [@ericof] [#10](https://github.com/plonegovbr/volto-network-block/issues/10)
+- Update Twitter (X) icon [@ericof] [#11](https://github.com/plonegovbr/volto-network-block/issues/11)
+
 ## 0.2.0 (2023-08-04)
 
 ### Feature

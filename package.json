@@ -1,6 +1,6 @@
 {
   "name": "@plonegovbr/volto-network-block",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Volto Social Networks blocks and components",
   "main": "src/index.js",
   "repository": {
